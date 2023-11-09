@@ -395,8 +395,8 @@ func (f *FastTracer) testCU() {
 func (f *FastTracer) testCM() {
 	f.tracert(TestIPsCollection.Beijing.Location, TestIPsCollection.Beijing.CM)
 	f.tracert(TestIPsCollection.Beijing.Location, TestIPsCollection.Beijing.CMIN2)
-	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CM)
-	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CMIN2)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CU169)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CU9929)
 	f.tracert(TestIPsCollection.Hangzhou.Location, TestIPsCollection.Hangzhou.CM)
 	f.tracert(TestIPsCollection.Guangzhou.Location, TestIPsCollection.Guangzhou.CM)
 }
@@ -410,8 +410,12 @@ func (f *FastTracer) testEDU() {
 }
 
 func (f *FastTracer) testFast() {
-	f.tracert(TestIPsCollection.Beijing.Location, TestIPsCollection.Beijing.CT163)
-	f.tracert(TestIPsCollection.Beijing.Location, TestIPsCollection.Beijing.CU169)
-	f.tracert(TestIPsCollection.Beijing.Location, TestIPsCollection.Beijing.CM)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CT163)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CTCN2)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CU169)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CU9929)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CU169)
+	f.tracert(TestIPsCollection.Shanghai.Location, TestIPsCollection.Shanghai.CU9929)
 	f.tracert(TestIPsCollection.Beijing.Location, TestIPsCollection.Beijing.EDU)
+	f.tracert(TestIPsCollection.Hefei.Location, TestIPsCollection.Hefei.CST)
 }
